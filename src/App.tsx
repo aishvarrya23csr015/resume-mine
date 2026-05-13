@@ -47,24 +47,24 @@ export default function App() {
           >
             <div className="space-y-8">
               <div className="border border-yellow-400/30 rounded-lg p-6 hover:border-yellow-400/60 transition-colors">
-                <h3 className="text-2xl font-bold text-white mb-2">10th Year</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">10th Grade</h3>
                 <p className="text-yellow-400 mb-2">2020 - 2021</p>
                 <p className="text-lg font-semibold text-yellow-400 mb-2">St.Joseph's Matriculation Higher Secondary School</p>
-                <p className="text-foreground/70">Foundation in Science and Mathematics</p>
+                <p className="text-foreground/70">Percentage: 86.83%</p>
               </div>
 
               <div className="border border-yellow-400/30 rounded-lg p-6 hover:border-yellow-400/60 transition-colors">
-                <h3 className="text-2xl font-bold text-white mb-2">12th Year</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">12th Grade</h3>
                 <p className="text-yellow-400 mb-2">2022 - 2023</p>
                 <p className="text-lg font-semibold text-yellow-400 mb-2">St.Joseph's Matriculation Higher Secondary School</p>
-                <p className="text-foreground/70">Advanced Specialization in STEM</p>
+                <p className="text-foreground/70">Percentage: 86.83%</p>
               </div>
 
               <div className="border border-yellow-400/30 rounded-lg p-6 hover:border-yellow-400/60 transition-colors">
                 <h3 className="text-2xl font-bold text-white mb-2">Undergraduate</h3>
                 <p className="text-yellow-400 mb-2">2023 - 2027</p>
                 <p className="text-lg font-semibold text-yellow-400 mb-2">Kongu Engineering College</p>
-                <p className="text-foreground/70">Bachelor's in Computer Science</p>
+                <p className="text-foreground/70">Bachelor's in Computer Science - CGPA: 7.92</p>
               </div>
             </div>
           </Chapter>
