@@ -1,9 +1,5 @@
 services:
-  - type: web
-    name: resume-mine
-    env: node
+  - type: static
+    name: aishvarya
     buildCommand: bun install && bun run build
-    startCommand: bun start
-    envVars:
-      - key: NODE_ENV
-        value: production
+    staticPublishPath: ./dist/client
