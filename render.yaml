@@ -1,5 +1,9 @@
 services:
-  - type: static
+  - type: web
     name: resume-mine
+    env: node
     buildCommand: bun install && bun run build
-    staticPublishPath: ./dist
+    startCommand: bun run preview
+    envVars:
+      - key: NODE_ENV
+        value: production
