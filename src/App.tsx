@@ -5,6 +5,7 @@ import { Projects } from './components/story/Projects'
 import { Contact } from './components/story/Contact'
 import { Chapter } from './components/story/Chapter'
 import { CertificateModal } from './components/story/CertificateModal'
+import { EducationJourneyMap } from './components/story/EducationJourneyMap'
 import { useState } from 'react'
 
 export default function App() {
@@ -25,16 +26,49 @@ export default function App() {
             title="About Me"
             id="chapter-1"
           >
-            <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-              I'm Aishvarrya P R, a passionate developer and technology enthusiast from Kerala. 
-              With a strong foundation in both frontend and backend development, I specialize in creating 
-              innovative solutions that solve real-world problems.
-            </p>
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              My journey in tech started with curiosity about how things work. Today, I combine creative thinking 
-              with technical expertise to build applications that make a difference. When I'm not coding, 
-              you'll find me exploring new technologies or contributing to open-source projects.
-            </p>
+            <div className="space-y-6">
+              <p className="text-lg text-foreground/80 leading-relaxed">
+                I'm Aishvarrya P R, a passionate developer and technology enthusiast from Kerala. 
+                With a strong foundation in both frontend and backend development, I specialize in creating 
+                innovative solutions that solve real-world problems. I'm currently pursuing my Bachelor's degree 
+                in Computer Science at Kongu Engineering College while actively building and shipping projects.
+              </p>
+
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="border border-yellow-400/20 rounded-lg p-4 bg-yellow-400/5 hover:bg-yellow-400/10 transition-colors">
+                  <h4 className="font-semibold text-yellow-400 mb-2">What I Do</h4>
+                  <p className="text-sm text-foreground/70">
+                    I build full-stack web applications with a focus on user experience and performance. 
+                    From responsive frontends to scalable backends, I enjoy the entire development lifecycle.
+                  </p>
+                </div>
+                <div className="border border-yellow-400/20 rounded-lg p-4 bg-yellow-400/5 hover:bg-yellow-400/10 transition-colors">
+                  <h4 className="font-semibold text-yellow-400 mb-2">My Approach</h4>
+                  <p className="text-sm text-foreground/70">
+                    I combine creative problem-solving with technical expertise to deliver solutions that matter. 
+                    Every project is an opportunity to learn and innovate.
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-lg text-foreground/80 leading-relaxed">
+                My journey in tech started with curiosity about how things work. Today, I bring together clean code, 
+                modern technologies, and a user-centric mindset to create applications that make a real difference. 
+                I'm passionate about continuous learning, exploring emerging technologies, and contributing to open-source projects.
+              </p>
+
+              <div className="border-l-4 border-yellow-400 pl-4 py-2">
+                <p className="text-foreground/80 italic">
+                  "I believe technology should be accessible, intuitive, and built with purpose. 
+                  Every line of code is an opportunity to create value."
+                </p>
+              </div>
+
+              <p className="text-foreground/70">
+                When I'm not coding, you'll find me exploring new frameworks and libraries, reading about tech trends, 
+                or collaborating with other developers. I'm always excited to take on new challenges and grow as a developer.
+              </p>
+            </div>
           </Chapter>
         </section>
 
@@ -45,28 +79,7 @@ export default function App() {
             title="Educational Journey"
             id="chapter-2"
           >
-            <div className="space-y-8">
-              <div className="border border-yellow-400/30 rounded-lg p-6 hover:border-yellow-400/60 transition-colors">
-                <h3 className="text-2xl font-bold text-white mb-2">10th Grade</h3>
-                <p className="text-yellow-400 mb-2">2020 - 2021</p>
-                <p className="text-lg font-semibold text-yellow-400 mb-2">St.Joseph's Matriculation Higher Secondary School</p>
-                <p className="text-foreground/70">Percentage: 86.83%</p>
-              </div>
-
-              <div className="border border-yellow-400/30 rounded-lg p-6 hover:border-yellow-400/60 transition-colors">
-                <h3 className="text-2xl font-bold text-white mb-2">12th Grade</h3>
-                <p className="text-yellow-400 mb-2">2022 - 2023</p>
-                <p className="text-lg font-semibold text-yellow-400 mb-2">St.Joseph's Matriculation Higher Secondary School</p>
-                <p className="text-foreground/70">Percentage: 86.83%</p>
-              </div>
-
-              <div className="border border-yellow-400/30 rounded-lg p-6 hover:border-yellow-400/60 transition-colors">
-                <h3 className="text-2xl font-bold text-white mb-2">Undergraduate</h3>
-                <p className="text-yellow-400 mb-2">2023 - 2027</p>
-                <p className="text-lg font-semibold text-yellow-400 mb-2">Kongu Engineering College</p>
-                <p className="text-foreground/70">Bachelor's in Computer Science - CGPA: 7.92</p>
-              </div>
-            </div>
+            <EducationJourneyMap />
           </Chapter>
         </section>
 
