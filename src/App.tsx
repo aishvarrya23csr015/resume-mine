@@ -4,8 +4,11 @@ import { Skills } from './components/story/Skills'
 import { Projects } from './components/story/Projects'
 import { Contact } from './components/story/Contact'
 import { Chapter } from './components/story/Chapter'
+import { CertificateModal } from './components/story/CertificateModal'
+import { useState } from 'react'
 
 export default function App() {
+  const [selectedCertificate, setSelectedCertificate] = useState<number | null>(null)
   return (
     <div className="min-h-screen bg-background">
       <Nav />
@@ -92,6 +95,41 @@ export default function App() {
             </div>
           </Chapter>
         </section>
+
+        <section id="chapter-5">
+          <Chapter 
+            number="5" 
+            eyebrow="Professional Recognition" 
+            title="Global Certifications"
+            id="chapter-5"
+          >
+            <div className="space-y-6">
+              <button
+                onClick={() => setSelectedCertificate(0)}
+                className="w-full border border-cyan-400/30 rounded-lg p-6 hover:border-cyan-400/60 transition-colors cursor-pointer hover:bg-cyan-400/5 text-left"
+              >
+                <h3 className="text-2xl font-bold text-white mb-2">MongoDB Associate Developer</h3>
+                <p className="text-cyan-400 font-semibold">MongoDB University</p>
+                <p className="text-foreground/70 mt-2">Certification demonstrating proficiency in MongoDB database development and design patterns</p>
+              </button>
+
+              <button
+                onClick={() => setSelectedCertificate(1)}
+                className="w-full border border-cyan-400/30 rounded-lg p-6 hover:border-cyan-400/60 transition-colors cursor-pointer hover:bg-cyan-400/5 text-left"
+              >
+                <h3 className="text-2xl font-bold text-white mb-2">Java SE 17 Developer</h3>
+                <p className="text-cyan-400 font-semibold">Oracle</p>
+                <p className="text-foreground/70 mt-2">Certification validating expertise in Java 17 programming and application development</p>
+              </button>
+            </div>
+          </Chapter>
+        </section>
+
+        <CertificateModal
+          isOpen={selectedCertificate !== null}
+          onOpenChange={(open) => !open && setSelectedCertificate(null)}
+          certificateIndex={selectedCertificate ?? 0}
+        />
 
         <section id="contact" className="min-h-screen py-20">
           <div className="max-w-4xl mx-auto px-4">
