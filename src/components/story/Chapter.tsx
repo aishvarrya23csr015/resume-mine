@@ -13,7 +13,7 @@ export function Chapter({ number, eyebrow, title, children, id }: ChapterProps) 
   return (
     <section 
       id={id} 
-      className="relative px-6 md:px-10 py-12 md:py-16 overflow-hidden"
+      className="relative px-6 md:px-10 py-16 md:py-24 overflow-hidden"
       style={{
         background: "linear-gradient(135deg, rgba(88, 28, 135, 0.3) 0%, rgba(139, 34, 139, 0.2) 25%, rgba(20, 100, 140, 0.3) 75%, rgba(0, 150, 150, 0.2) 100%)",
         backgroundColor: "#0f1419"

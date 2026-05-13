@@ -15,7 +15,7 @@ export default function App() {
           <Hero />
         </section>
 
-        <section id="chapter-1" className="min-h-screen">
+        <section id="chapter-1">
           <Chapter 
             number="1" 
             eyebrow="My Journey" 
@@ -35,7 +35,7 @@ export default function App() {
           </Chapter>
         </section>
 
-        <section id="chapter-2" className="min-h-screen">
+        <section id="chapter-2">
           <Chapter 
             number="2" 
             eyebrow="Education" 
@@ -67,7 +67,7 @@ export default function App() {
           </Chapter>
         </section>
 
-        <section id="chapter-3" className="min-h-screen">
+        <section id="chapter-3">
           <Chapter 
             number="3" 
             eyebrow="Portfolio" 
@@ -80,7 +80,7 @@ export default function App() {
           </Chapter>
         </section>
 
-        <section id="chapter-4" className="min-h-screen">
+        <section id="chapter-4">
           <Chapter 
             number="4" 
             eyebrow="Expertise" 
