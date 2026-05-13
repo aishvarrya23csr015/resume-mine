@@ -35,16 +35,62 @@ export default function App() {
           </Chapter>
         </section>
 
-        <section id="chapter-4" className="min-h-screen py-20">
-          <div className="max-w-4xl mx-auto px-4">
-            <Projects />
-          </div>
+        <section id="chapter-2" className="min-h-screen py-20">
+          <Chapter 
+            number="2" 
+            eyebrow="Education" 
+            title="Educational Journey"
+            id="chapter-2"
+          >
+            <div className="space-y-8">
+              <div className="border border-yellow-400/30 rounded-lg p-6 hover:border-yellow-400/60 transition-colors">
+                <h3 className="text-2xl font-bold text-white mb-2">10th Year</h3>
+                <p className="text-yellow-400 mb-2">2020 - 2021</p>
+                <p className="text-lg font-semibold text-yellow-400 mb-2">St.Joseph's Matriculation Higher Secondary School</p>
+                <p className="text-foreground/70">Foundation in Science and Mathematics</p>
+              </div>
+
+              <div className="border border-yellow-400/30 rounded-lg p-6 hover:border-yellow-400/60 transition-colors">
+                <h3 className="text-2xl font-bold text-white mb-2">12th Year</h3>
+                <p className="text-yellow-400 mb-2">2022 - 2023</p>
+                <p className="text-lg font-semibold text-yellow-400 mb-2">St.Joseph's Matriculation Higher Secondary School</p>
+                <p className="text-foreground/70">Advanced Specialization in STEM</p>
+              </div>
+
+              <div className="border border-yellow-400/30 rounded-lg p-6 hover:border-yellow-400/60 transition-colors">
+                <h3 className="text-2xl font-bold text-white mb-2">Undergraduate</h3>
+                <p className="text-yellow-400 mb-2">2023 - 2027</p>
+                <p className="text-lg font-semibold text-yellow-400 mb-2">Kongu Engineering College</p>
+                <p className="text-foreground/70">Bachelor's in Computer Science</p>
+              </div>
+            </div>
+          </Chapter>
         </section>
 
-        <section id="chapter-5" className="min-h-screen py-20">
-          <div className="max-w-4xl mx-auto px-4">
-            <Skills />
-          </div>
+        <section id="chapter-3" className="min-h-screen py-20">
+          <Chapter 
+            number="3" 
+            eyebrow="Portfolio" 
+            title="Projects"
+            id="chapter-3"
+          >
+            <div className="mb-8">
+              <Projects />
+            </div>
+          </Chapter>
+        </section>
+
+        <section id="chapter-4" className="min-h-screen py-20">
+          <Chapter 
+            number="4" 
+            eyebrow="Expertise" 
+            title="Skills"
+            id="chapter-4"
+          >
+            <div className="mb-8">
+              <Skills />
+            </div>
+          </Chapter>
         </section>
 
         <section id="contact" className="min-h-screen py-20">
