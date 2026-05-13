@@ -3,7 +3,7 @@ services:
     name: resume-mine
     env: node
     buildCommand: npm install && npm run build
-    startCommand: node server.js
+    startCommand: node dist/server/server.js
     healthCheckPath: /
     envVars:
       - key: NODE_ENV
