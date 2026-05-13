@@ -3,7 +3,7 @@ services:
     name: resume-mine
     env: node
     buildCommand: bun install && bun run build
-    startCommand: bun run preview
+    startCommand: bun start
     envVars:
       - key: NODE_ENV
         value: production
